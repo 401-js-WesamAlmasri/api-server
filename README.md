@@ -2,16 +2,17 @@
 
 A simple API server with tow routers and two models (Food and Clothes) with tests.
 
-- [Submission Pull Request](https://github.com/401-js-WesamAlmasri/api-server/pulls/1)
+- [Submission Pull Request](https://github.com/401-js-WesamAlmasri/api-server/pull/1)
 - [Tests](https://github.com/401-js-WesamAlmasri/api-server/actions/)
 - [Deployed url](https://api-ser-mongo.herokuapp.com//)
 
 ## Setup
 
 `.env Requierments`
-    - `PORT` - port number
-    - `MONGODB_URI` - mongodb connection string
-    - `MONGOOSE_TEST_URI` - test mongodb connection string
+
+- `PORT` - port number
+- `MONGODB_URI` - mongodb connection string
+- `MONGOOSE_TEST_URI` - test mongodb connection string
 
 ## Running the app
 
