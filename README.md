@@ -4,7 +4,7 @@ A simple API server with tow routers and two models (Food and Clothes) with test
 
 - [Submission Pull Request](https://github.com/401-js-WesamAlmasri/api-server/pull/1)
 - [Tests](https://github.com/401-js-WesamAlmasri/api-server/actions/)
-- [Deployed url](https://api-ser-mongo.herokuapp.com//)
+- [Deployed url](https://api-ser-mongo.herokuapp.com/)
 
 ## Setup
 
