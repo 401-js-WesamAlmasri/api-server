@@ -8,8 +8,8 @@ const notFoundHanlder = require('./error-handlers/404');
 const errorHnalder = require('./error-handlers/500');
 
 // importing routes
-const foodRouter = require('./routes/food');
-const clothesRouter = require('./routes/clothes');
+const v1Router = require('./routes/v1');
+const moduleFinder = require('./middleware/model-finder');
 
 // regester middlewares
 app.use(express.json());
@@ -17,8 +17,7 @@ app.use(morgan('dev'));
 app.use(cors());
 
 // register routers
-app.use('/api/v1/food', foodRouter);
-app.use('/api/v1/clothes', clothesRouter);
+app.use('/api/v1/:module', moduleFinder, v1Router);
 
 // regester middlewares
 app.use('*', notFoundHanlder);

@@ -44,6 +44,17 @@ describe('api server', () => {
       expect(deleteResponse.status).toBe(404);
       expect(deleteResponse.body).toEqual(notFoundResponse);
     });
+
+    it('should get 500 status error on a bad api route', async () => {
+      const notFoundResponse = {
+        status: 500,
+        message: 'Not Found',
+      };
+      const response = await request.get('/api/v1/foo');
+
+      expect(response.status).toBe(500);
+      expect(response.body).toEqual(notFoundResponse);
+    });
     
   });
 
